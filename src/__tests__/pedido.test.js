@@ -110,5 +110,16 @@ test('deve listar os pedidos cadastrados', () => {
             pedidoService.atualizarStatus(pedido.id, 'entregue');
         }).toThrow('Não é permitido alterar de recebido para entregue.');
     });
+    
+    test('deve rejeitar uma prioridade inválida', () => {
+        expect(() => {
+            pedidoService.cadastrarPedido({
+                cliente: 'Ana Souza',
+                tipo: 'entrega',
+                valor: 100,
+                prioridade: 'urgente'
+            });
+        }).toThrow('Prioridade inválida. Use baixa, normal ou alta.');
+    });
 
 });
