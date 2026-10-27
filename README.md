@@ -15,13 +15,13 @@ API REST desenvolvida em Node.js e Express para cadastrar, listar, consultar e a
 
 ## 3. Arquitetura do projeto
 
-- `src/server.js`: inicialização do servidor.
-- `src/routes/`: definição das rotas HTTP.
-- `src/controllers/`: tratamento das requisições e respostas.
-- `src/services/`: regras de negócio e validações.
-- `src/database/`: conexão e arquivo do banco SQLite.
-- `src/__tests__/`: testes automatizados.
-- `evidencias/`: capturas de tela dos testes manuais.
+- `src/server.js`
+- `src/routes/`
+- `src/controllers/`
+- `src/services/`
+- `src/database/`
+- `src/__tests__/`
+- `evidencias/`
 
 ## 4. Como executar
 
