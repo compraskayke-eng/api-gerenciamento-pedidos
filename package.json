@@ -1,0 +1,20 @@
+{
+  "name": "api-gerenciamento-pedidos",
+  "version": "1.0.0",
+  "description": "API REST para gerenciamento de pedidos",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --runInBand"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
