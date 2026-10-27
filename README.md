@@ -92,12 +92,3 @@ Os testes verificam cadastro, listagem, validação, consulta e atualização de
 
 As capturas dos testes manuais estão na pasta `evidencias/`.
 
-## 11. Uso de Inteligência Artificial
-
-A Inteligência Artificial foi utilizada como apoio na organização da arquitetura, elaboração de códigos, validações, testes automatizados e documentação.
-
-Sugestão aceita: separar o projeto em rotas, controladores e serviços para organizar as responsabilidades.
-
-Sugestão modificada: o teste de listagem foi ajustado para verificar a presença do pedido esperado, em vez de exigir que o banco contenha exatamente um registro.
-
-As sugestões foram testadas e adaptadas durante o desenvolvimento.
