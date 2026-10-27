@@ -86,4 +86,29 @@ test('deve listar os pedidos cadastrados', () => {
 
         expect(atualizado.status).toBe('em_preparacao');
     });
+    
+    test('deve rejeitar um tipo inválido', () => {
+        expect(() => {
+            pedidoService.cadastrarPedido({
+                cliente: 'Maria Silva',
+                tipo: 'invalido',
+                valor: 100,
+                prioridade: 'alta'
+            });
+        }).toThrow('Tipo inválido. Use entrega ou retirada.');
+    });
+
+    test('deve impedir uma transição de status não permitida', () => {
+        const pedido = pedidoService.cadastrarPedido({
+            cliente: 'Pedro Souza',
+            tipo: 'entrega',
+            valor: 100,
+            prioridade: 'normal'
+        });
+
+        expect(() => {
+            pedidoService.atualizarStatus(pedido.id, 'entregue');
+        }).toThrow('Não é permitido alterar de recebido para entregue.');
+    });
+
 });
