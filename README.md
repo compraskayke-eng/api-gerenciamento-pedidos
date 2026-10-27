@@ -92,3 +92,6 @@ Os testes verificam cadastro, listagem, validação, consulta e atualização de
 
 As capturas dos testes manuais estão na pasta `evidencias/`.
 
+## 11. Uso de Inteligência Artificial
+
+A Inteligência Artificial foi utilizada como apoio na organização da arquitetura, elaboração de códigos, validações, testes automatizados e documentação.
